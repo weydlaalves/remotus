@@ -8,14 +8,12 @@ interface props extends RectButtonProps {
   nameIcon?: string;
   title: string;
   color:
-    | 'primary'
-    | 'primary_light'
-    | 'secondary'
-    | 'secondary_light'
-    | 'success'
-    | 'success_light'
-    | 'warning'
-    | 'warning_light';
+  | 'primary'
+  | 'secondary'
+  | 'grey'
+  | 'success'
+  | 'warning'
+  | 'shape';
 }
 
 export function Button({ loading, nameIcon, title, color, ...rest }: props) {

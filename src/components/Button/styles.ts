@@ -7,13 +7,11 @@ interface ButtonProps {
   loading: boolean;
   color:
     | 'primary'
-    
     | 'secondary'
-    
+    | 'grey'
     | 'success'
-    
     | 'warning'
-
+    | 'shape'
 }
 
 export const Container = styled(RectButton)<ButtonProps>`
@@ -44,6 +42,17 @@ export const Container = styled(RectButton)<ButtonProps>`
     css`
       background: ${theme.colors.warning};
     `}
+    ${({ color, theme }) =>
+    color === 'shape' &&
+    css`
+      background: ${theme.colors.shape};
+    `}
+    ${({ color, theme }) =>
+    color === 'grey' &&
+    css`
+      background: ${theme.colors.grey};
+    `}
+
   
 `;
 

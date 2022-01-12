@@ -1,6 +1,8 @@
 import React from 'react';
 import ImgInicial from '../../assets/ImgInicial/ImgInicial';
 import Logo from '../../assets/Logo/Logo';
+import Google from '../../assets/Icon/Google/google';
+import Facebook from '../../assets/Icon/Facebook/facebook';
 import {
     Container,
     Content,
@@ -11,6 +13,8 @@ import {
     Img,
     LogoRemotus,
     WrapperText,
+    IconGoogle,
+    IconFacebook
 
   } from './styles';
  
@@ -26,16 +30,16 @@ import {
               <LogoRemotus xml={Logo}
               opacity={150}
               />
-            </Wrapper>
-            <WrapperText>
+              <WrapperText>
               <Text>Falta pouco para você encontrar um lugar para trabalhar!</Text>
             </WrapperText>
-          </Card>
-            <Wrapper>
-              
             </Wrapper>
-          
+          </Card>
           <CardButtons>
+              <IconGoogle xml={Google}/>
+              <Text>Continuar com o Google</Text>
+              <IconFacebook xml={Facebook}/>
+              <Text>Continuar com o Facebook</Text>
           </CardButtons>
         </Content>
       </Container>
