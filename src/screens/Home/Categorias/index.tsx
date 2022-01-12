@@ -3,7 +3,6 @@ import React from 'react';
 import {
   StyleSheet,
   Text,
-  Button,
   View,
   SectionList,
   SafeAreaView,
@@ -23,9 +22,7 @@ const ListItem = ({ item }) => {
         style={styles.itemPhoto}
         resizeMode="cover"
       />
-     
       <Text style={styles.itemText}>{item.text}</Text>
-
     </View>
   );
 };
@@ -50,7 +47,6 @@ export function Categorias() {
                   data={section.data}
                   renderItem={({ item }) => <ListItem item={item} />}
                   showsHorizontalScrollIndicator ={false}
-                  
                 />
               ) : null}
             </>
@@ -80,23 +76,25 @@ const SECTIONS = [
       {
         key: '2',
         text: 'Restaurante',
-        uri: 'https://scontent.fjdo10-1.fna.fbcdn.net/v/t39.30808-6/245273839_2937174959867871_9219484628657418670_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeFFpiwYoEHOwYtKFP27wtCkuR9CBhBIGIu5H0IGEEgYi41j61PI8WFM8Uoe9kV_RdMMyGhVA0Ujs7Rk17dHaBhc&_nc_ohc=6XPRB77_gHYAX-EvGhN&_nc_ht=scontent.fjdo10-1.fna&oh=00_AT_W9a8qzw0C6Us7H6AYetEALXsUwg3eTIsbTZvTLZEJgg&oe=61D93545',
+        uri: 'https://image.freepik.com/fotos-gratis/interior-do-restaurante_1127-3394.jpg',
+      },
+      {
+        key: '3',
+        text: 'Cafeteria',
+        uri: 'https://image.freepik.com/free-photo/closeup-coffee-machine_53876-42967.jpg',
       },
     ],
   },
 ];
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    
+    flex: 1,    
     
   },
   sectionHeader: {
     fontWeight: '800',
     fontSize: 18,
-    color: '#0d1321',
-    
-    
+    color: '#0d1321',  
     
   },
   item: {
@@ -109,6 +107,5 @@ const styles = StyleSheet.create({
   },
   itemText: {
     color: 'rgba(0, 0, 0, 0.5)',
-    marginBottom: 15,
   },
 });

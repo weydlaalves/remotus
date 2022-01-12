@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Wrapper,Icon} from './style';
+import { Container, Wrapper,Icon, IconPerfil, IconRemotus} from './style';
 import { Button } from '../../../components/Button';
 import { Linking } from 'react-native';
-  
+import Perfil from '../../../assets/Icon/Perfil/perfil'
+import Remotus from '../../../assets/Icon/Remotus/remotus';
 
 export function Footer(){
   
@@ -16,7 +17,6 @@ export function Footer(){
               color="warning"
           /> 
         </Wrapper>
-
          <Wrapper> 
           <Icon>search</Icon>
           <Button
@@ -26,7 +26,7 @@ export function Footer(){
             />
         </Wrapper>      
         <Wrapper> 
-          <Icon>explore</Icon>
+            <IconRemotus xml={Remotus}/>
             <Button
               title="Visitados"
               color="warning"
@@ -41,7 +41,7 @@ export function Footer(){
             />
         </Wrapper>        
         <Wrapper>
-          <Icon>face</Icon> 
+          <IconPerfil xml={Perfil} />
             <Button
                 title="Perfil"
                 color="warning"
