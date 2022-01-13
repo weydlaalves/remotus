@@ -16,23 +16,56 @@ export const Content = styled.View`
 export const Wrapper = styled.View`
    align-items:center;
    justify-content:center;
-   margin-Top: -85%;
+   margin-top: -85%;
    margin-bottom: 60px;
 `;
 
 export const WrapperText = styled.View`
    width: 80%;
    height: 67px;
-   border-radius: 3px;
+   border-radius: 10px;
    background:#b0cb32;
    align-items:center;
    justify-content:center;
+   padding:10px;
 
 `;
+
+export const Text = styled.Text`
+   font-size: ${RFValue(16)}px;
+   font-family: ${({ theme }) => theme.fonts.bold};
+   color: ${({ theme }) => theme.colors.shape};
+   line-height: 19px;
+   text-align: center;
+   letter-spacing: 0.15px;  
+`;
+
+export const TextIcon = styled.Text`
+   font-size: ${RFValue(14)}px;
+   font-family: ${({ theme }) => theme.fonts.regular};
+   color: ${({ theme }) => theme.colors.warning};
+   padding: 10px;
+   border-radius: 10px; 
+  
+`;
+export const TextBlock = styled.Text`
+   font-size: ${RFValue(14)}px;
+   font-family: ${({ theme }) => theme.fonts.regular};
+   color: ${({ theme }) => theme.colors.warning};  
+
+`;
+export const TextConvidado = styled.Text`
+   font-size: ${RFValue(14)}px;
+   font-family: ${({ theme }) => theme.fonts.regular};
+   color: ${({ theme }) => theme.colors.shape};
+   line-height: 19px;
+   text-align: center;
+   background: ${({ theme }) => theme.colors.success};
+   
+`;
+
 export const Card = styled.View`
-   align-items:center;
-   justify-content:center;
-   margin-Top: 10%;
+   margin-top: 10%;
    
 
 `;
@@ -49,76 +82,49 @@ export const CardButtons = styled.TouchableOpacity`
 
 `;
 export const CardIcon = styled.TouchableOpacity`
-   flexDirection: row   ;
-   background: ${({ theme }) => theme.colors.shape};
    align-items:center;
+   justify-content:center;
+   background: ${({ theme }) => theme.colors.shape};
    margin-bottom: 10px;
+   margin-left:10px
    width: ${RFValue(150)}px;
    border-radius: 10px;
-  
-
 `;
 
-export const Text = styled.Text`
-   font-size: ${RFValue(16)}px;
-   font-family: ${({ theme }) => theme.fonts.bold};
-   color: ${({ theme }) => theme.colors.shape};
-   line-height: 19px;
-   text-align: center;
-   letter-spacing: 0.15px;  
-`;
-export const TextIcon = styled.Text`
-   font-size: ${RFValue(14)}px;
-   font-family: ${({ theme }) => theme.fonts.regular};
-   color: ${({ theme }) => theme.colors.warning};
-   width: ${RFValue(200)}px;
-   height:${RFValue(40)}px;
-   padding: 10px;
-   border-radius: 10px;
-  
-`;
-export const TextConvidado = styled.Text`
-   font-size: ${RFValue(14)}px;
-   font-family: ${({ theme }) => theme.fonts.regular};
-   color: ${({ theme }) => theme.colors.shape};
-   line-height: 19px;
-   text-align: center;
-   background: ${({ theme }) => theme.colors.success};
+export const CardBlock = styled.View`
+   flex-direction:row;
+   
    
 `;
 
 export const Img = styled(SvgXml).attrs({
    width: RFValue(360),
    height: RFValue(316),
-})`
-   
-
-`;
-
+})``;
 export const LogoRemotus = styled(SvgXml).attrs({
    width: RFPercentage(20),
    height: RFPercentage(30),
-   
 })``;
-
-
 export const IconGoogle = styled(SvgXml).attrs({
    width: RFPercentage(3),
    height: RFPercentage(3),
-})`
-   
-
-`;
-
-
+})``;
 export const IconFacebook = styled(SvgXml).attrs({
    width: RFPercentage(3),
    height: RFPercentage(3),
    
 })``;
-
+export const IconPhone= styled(SvgXml).attrs({
+   width: RFPercentage(3),
+   height: RFPercentage(3),
+   
+})``;
+export const IconMail= styled(SvgXml).attrs({
+   width: RFPercentage(3),
+   height: RFPercentage(3),
+})``;
 export const Icon = styled(MaterialIcons)`
   color: ${({ theme }) => theme.colors.warning};
   font-size: ${RFValue(20)}px;
- 
+   
 `;
