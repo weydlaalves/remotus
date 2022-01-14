@@ -12,7 +12,7 @@ export function Footer(){
         <Wrapper>
           <Icon>home</Icon>
           <Button
-              onPress={() => Linking.openURL('https://bilinguaapp.com.br/')}
+              onPress={() => Linking.openURL('https://remotusapp.com.br/')}
               title="Home"
               color="warning"
           /> 
@@ -20,7 +20,7 @@ export function Footer(){
          <Wrapper> 
           <Icon>search</Icon>
           <Button
-              onPress={() => Linking.openURL('https://bilinguaapp.com.br/')}
+              onPress={() => Linking.openURL('https://remotusapp.com.br/')}
               title="Pesquisar"
               color="warning"
             />

@@ -13,37 +13,23 @@ import {
     Card,
     CardButtons,
     CardIcon,
-<<<<<<< HEAD
     CardFooter,
     Text,
     TextIcon,
     TextFooter,
-=======
-    CardBlock,
-    Text,
-    TextIcon,
-    TextConvidado,
-    TextBlock,
->>>>>>> 078c952897ac3be885b99312e05769fc2e680e48
     Img,
     LogoRemotus,
     WrapperText,
-    Icon,
+    WrapperBlock,
     IconGoogle,
     IconFacebook,
-<<<<<<< HEAD
-    WrapperBlock,
-=======
     IconPhone,
-    IconMail
->>>>>>> 078c952897ac3be885b99312e05769fc2e680e48
-
+    IconMail,
+  
   } from './styles';
-import phone from '../../assets/Icon/Phone/phone';
  
   export function Inicial() {
   
-    
     return (
       <Container>
         <Content>
@@ -56,32 +42,6 @@ import phone from '../../assets/Icon/Phone/phone';
                 <Text>Falta pouco para você encontrar um lugar para trabalhar!</Text>
               </WrapperText>
             </Wrapper>
-<<<<<<< HEAD
-            <CardButtons>
-              <IconGoogle xml={Google}/>
-              <TextIcon>Continuar com o Google</TextIcon>
-            </CardButtons>
-            <CardButtons>    
-                <IconFacebook xml={Facebook}/>
-                <TextIcon>Continuar com o Facebook</TextIcon>
-            </CardButtons>
-            <WrapperBlock>
-              <CardIcon>
-                  <Icon name='phone'/>
-                  <TextIcon>Celular</TextIcon>
-              </CardIcon>
-              <CardIcon>
-                  <Icon name='mail'/>
-                  <TextIcon>Email</TextIcon>
-              </CardIcon>
-            </WrapperBlock> 
-            <CardFooter>
-                  
-                  <TextFooter>Continuar como convidado</TextFooter>
-            </CardFooter>
-           
-          </Card>       
-=======
             <Card>
               
               <CardButtons>
@@ -94,21 +54,21 @@ import phone from '../../assets/Icon/Phone/phone';
                 <TextIcon>Continuar com o Facebook</TextIcon>
               </CardButtons>
               
-              <CardBlock>
+              <WrapperBlock>
                 <CardIcon>
                   <IconPhone xml={Phone}/>
-                  <TextBlock>Celular</TextBlock>
+                  <TextIcon>Celular</TextIcon>
                 </CardIcon>
                 <CardIcon>
                   <IconMail xml={Mail}/>
-                  <TextBlock>Email</TextBlock>
+                  <TextIcon>Email</TextIcon>
                 </CardIcon>
-              </CardBlock>
-              
-                <TextConvidado>Continuar como convidado</TextConvidado>
-              
+              </WrapperBlock>  
+             
+              <CardFooter>
+                <TextFooter>Continuar como convidado</TextFooter>
+              </CardFooter>
             </Card>       
->>>>>>> 078c952897ac3be885b99312e05769fc2e680e48
         </Content>          
       </Container>
     )};

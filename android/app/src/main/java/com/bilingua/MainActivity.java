@@ -1,4 +1,4 @@
-package com.bilingua;
+package com.remotus;
 
 import android.os.Bundle;
 
