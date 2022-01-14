@@ -77,25 +77,21 @@ const SECTIONS = [
       },
       {
         key: '2',
-        text: 'miudos com afeto',
-        uri: 'https://scontent.fjdo10-2.fna.fbcdn.net/v/t39.30808-6/s720x720/245382532_2937729579812409_406209465337538194_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeH7ciwDJ472Gh0Kildh5si6g18cpvtdH9eDXxym-10f11xTUofruiQvuY_5zlD3egTB0LmuX5oQVj8a2-sHlygY&_nc_ohc=omtBAt4i2MIAX9Zl1TV&_nc_ht=scontent.fjdo10-2.fna&oh=00_AT9_8SKeyOeeJXGBzClX-1dpZCEkE69aE4006SWYwBMdng&oe=61D9534D',
+        text: 'Miudos',
+        uri: 'https://image.freepik.com/fotos-gratis/bolos-velas-aalaw-e-polvilha-no-canto-do-fundo-rosa_23-2148190399.jpg',
       },
 
       {
         key: '3',
-        text: 'Item text 3',
-        uri: 'https://picsum.photos/id/1013/200',
+        text: 'Padaria Ideal',
+        uri: 'https://image.freepik.com/free-photo/different-types-bread-made-from-wheat-flour_140725-5648.jpg',
       },
       {
         key: '4',
-        text: 'Item text 4',
-        uri: 'https://picsum.photos/id/1015/200',
+        text: 'Gugu Lanches',
+        uri: 'https://image.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg',
       },
-      {
-        key: '5',
-        text: 'Item text 5',
-        uri: 'https://picsum.photos/id/1016/200',
-      },
+      
     ],
   },
   
@@ -120,11 +116,12 @@ const styles = StyleSheet.create({
   itemPhoto: {
     width: 100,
     height: 100,
-    borderRadius:100,
+    borderRadius:80,
 
   },
   itemText: {
     color: 'rgba(0, 0, 0, 0.5)',
-    marginTop: 5,
+    marginTop: 15,
+    marginLeft: 10,
   },
 });

@@ -19,6 +19,8 @@ export function AppRoutes() {
       <Screen name="inicial" component={Inicial} />
       <Screen name="home" component={Home} />
       
+      
+      
       </Navigator>
     </NavigationContainer>
   );
