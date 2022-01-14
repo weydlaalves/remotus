@@ -19,15 +19,21 @@ export const Wrapper = styled.View`
    margin-Top: -85%;
    margin-bottom: 60px;
 `;
+export const WrapperBlock = styled.View`
+   flex-direction: row;
+   justify-content:center;
+   margin: 10px;
+   
+`;
 
 export const WrapperText = styled.View`
    width: 80%;
    height: 67px;
-   border-radius: 3px;
+   border-radius: 10px;
    background:#b0cb32;
    align-items:center;
    justify-content:center;
-
+   padding: 7px;
 `;
 export const Card = styled.View`
    align-items:center;
@@ -37,11 +43,11 @@ export const Card = styled.View`
 
 `;
 export const CardButtons = styled.TouchableOpacity`
-   flexDirection: row;
+   flex-direction: row;
    background: ${({ theme }) => theme.colors.shape};
    align-items:center;
    justify-content:center;
-   margin-bottom: 10px;
+   margin:  20px 0 0 0 ;
    width: ${RFValue(300)}px;
    height:${RFValue(55)}px;
    border-radius: 10px;
@@ -49,14 +55,30 @@ export const CardButtons = styled.TouchableOpacity`
 
 `;
 export const CardIcon = styled.TouchableOpacity`
-   flexDirection: row   ;
+   flexDirection: row ;
    background: ${({ theme }) => theme.colors.shape};
-   align-items:center;
-   margin-bottom: 10px;
-   width: ${RFValue(150)}px;
+   width: ${RFValue(140)}px;
+   height:${RFValue(55)}px;
    border-radius: 10px;
+   margin:10px;
+   padding:20px;
+   
+
+   
   
 
+`;
+export const CardFooter = styled.TouchableOpacity`
+   flexDirection: row ;
+   background: ${({ theme }) => theme.colors.success};
+   width: ${RFValue(200)}px;
+   height:${RFValue(40)}px;
+   border-radius: 10px;
+   margin:30px 0 0 0;
+   justify-content: center;
+   
+   
+   
 `;
 
 export const Text = styled.Text`
@@ -65,7 +87,8 @@ export const Text = styled.Text`
    color: ${({ theme }) => theme.colors.shape};
    line-height: 19px;
    text-align: center;
-   letter-spacing: 0.15px;  
+   letter-spacing: 0.15px; 
+    
 `;
 export const TextIcon = styled.Text`
    font-size: ${RFValue(14)}px;
@@ -73,17 +96,19 @@ export const TextIcon = styled.Text`
    color: ${({ theme }) => theme.colors.warning};
    width: ${RFValue(200)}px;
    height:${RFValue(40)}px;
-   padding: 10px;
+   padding: 9px;
    border-radius: 10px;
+   margin-top:-8px;
   
 `;
-export const TextConvidado = styled.Text`
+export const TextFooter = styled.Text`
    font-size: ${RFValue(14)}px;
    font-family: ${({ theme }) => theme.fonts.regular};
    color: ${({ theme }) => theme.colors.shape};
-   line-height: 19px;
-   text-align: center;
-   background: ${({ theme }) => theme.colors.success};
+   justify-content:center;
+   margin-top:12px;
+   
+   
    
 `;
 
@@ -105,6 +130,8 @@ export const LogoRemotus = styled(SvgXml).attrs({
 export const IconGoogle = styled(SvgXml).attrs({
    width: RFPercentage(3),
    height: RFPercentage(3),
+   
+
 })`
    
 

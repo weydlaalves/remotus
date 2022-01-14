@@ -10,15 +10,17 @@ import {
     Card,
     CardButtons,
     CardIcon,
+    CardFooter,
     Text,
     TextIcon,
-    TextConvidado,
+    TextFooter,
     Img,
     LogoRemotus,
     WrapperText,
     Icon,
     IconGoogle,
-    IconFacebook
+    IconFacebook,
+    WrapperBlock,
 
   } from './styles';
  
@@ -41,21 +43,26 @@ import {
             <CardButtons>
               <IconGoogle xml={Google}/>
               <TextIcon>Continuar com o Google</TextIcon>
-          </CardButtons>
-          <CardButtons>    
-              <IconFacebook xml={Facebook}/>
-              <TextIcon>Continuar com o Facebook</TextIcon>
-          </CardButtons>
-          
-          <CardIcon>
-              <Icon name='phone'/>
-              <TextIcon>Celular</TextIcon>
-          </CardIcon>
-          <CardIcon>
-              <Icon name='mail'/>
-              <TextIcon>Email</TextIcon>
-          </CardIcon>
-              <TextConvidado>Continuar como convidado</TextConvidado>
+            </CardButtons>
+            <CardButtons>    
+                <IconFacebook xml={Facebook}/>
+                <TextIcon>Continuar com o Facebook</TextIcon>
+            </CardButtons>
+            <WrapperBlock>
+              <CardIcon>
+                  <Icon name='phone'/>
+                  <TextIcon>Celular</TextIcon>
+              </CardIcon>
+              <CardIcon>
+                  <Icon name='mail'/>
+                  <TextIcon>Email</TextIcon>
+              </CardIcon>
+            </WrapperBlock> 
+            <CardFooter>
+                  
+                  <TextFooter>Continuar como convidado</TextFooter>
+            </CardFooter>
+           
           </Card>       
         </Content>          
       </Container>
