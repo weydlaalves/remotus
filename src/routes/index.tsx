@@ -17,13 +17,12 @@ export function AppRoutes() {
           contentStyle: { backgroundColor: '#FFF' },
         }}
       >
-      <Screen name="home" component={Home} />
-      <Screen name="inicial" component={Inicial} />
       <Screen name="home_working" component={HomeWorking} /> 
+      <Screen name="home" component={Home} />
       
       
       
-      
+      <Screen name="inicial" component={Inicial} />
       
       
       

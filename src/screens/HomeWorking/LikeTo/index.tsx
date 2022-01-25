@@ -30,7 +30,7 @@ const ListItem = ({ item }) => {
   );
 };
 
-export function Sugestao() {
+export function LikeTo() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
@@ -67,7 +67,7 @@ export function Sugestao() {
 const SECTIONS = [
  
   {
-    title: 'Sugestões',
+    title: 'Você também pode gostar:',
     horizontal: true,
     data: [
       {
@@ -98,15 +98,16 @@ const SECTIONS = [
 ];
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#ffff',
+    height: 255,
+    padding: 10,
+    marginTop: -85,
+    marginBottom: 45,
 
   },
   sectionHeader: {
     fontWeight: '800',
     fontSize: 18,
     color: '#0d1321',
-    marginTop: 20,
     marginBottom: 5,
     
   },

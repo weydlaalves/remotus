@@ -5,6 +5,7 @@ export default {
     secondary: '#B0CB32',
   
     success: '#A96B3C',
+    sucess_light:'#FFEDDF',
     
     warning: '#0D1321',
 
