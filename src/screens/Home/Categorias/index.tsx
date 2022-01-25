@@ -8,13 +8,12 @@ import {
   SafeAreaView,
   Image,
   FlatList,
-
+  TouchableOpacity
 } from 'react-native';
-
 
 const ListItem = ({ item }) => {
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item}>
       <Image
         source={{
           uri: item.uri,
@@ -23,31 +22,32 @@ const ListItem = ({ item }) => {
         resizeMode="cover"
       />
       <Text style={styles.itemText}>{item.text}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
-
 
 export function Categorias() {
   return (
     <View style={styles.container}>
-      <StatusBar style="light" />
       <SafeAreaView style={{ flex: 1 }}>
         <SectionList
           contentContainerStyle={{ paddingHorizontal: 10 }}
-          stickySectionHeadersEnabled={false}
           sections={SECTIONS}
           renderSectionHeader={({ section }) => (
             <>
+              
               <Text style={styles.sectionHeader}>{section.title}</Text>
               {section.horizontal ? (
               
                 <FlatList
+                
                   horizontal
                   data={section.data}
                   renderItem={({ item }) => <ListItem item={item} />}
                   showsHorizontalScrollIndicator ={false}
+                  
                 />
+                
               ) : null}
             </>
           )}
@@ -67,11 +67,13 @@ const SECTIONS = [
   {
     title: 'Categorias',
     horizontal: true,
+    
     data: [
       {
         key: '1',
         text: 'Padaria',
         uri: 'https://image.freepik.com/fotos-gratis/saboroso-cafe-em-um-copo-branco_1232-412.jpg',
+        
       },
       {
         key: '2',

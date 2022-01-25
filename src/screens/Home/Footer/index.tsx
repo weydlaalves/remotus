@@ -5,8 +5,7 @@ import { Linking } from 'react-native';
 import Perfil from '../../../assets/Icon/Perfil/perfil'
 import Remotus from '../../../assets/Icon/Remotus/remotus';
 
-export function Footer(){
-  
+export function Footer() {
     return (
       <Container>
         <Wrapper>

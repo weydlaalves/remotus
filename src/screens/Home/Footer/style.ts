@@ -27,18 +27,15 @@ export const IconPerfil = styled(SvgXml).attrs({
   width: RFPercentage(3),
   height: RFPercentage(3),
 })`
-
-  color: ${({ theme }) => theme.colors.warning};
   margin-left: 25px; 
   margin-top: 15px;
-
 `;
 export const IconRemotus = styled(SvgXml).attrs({
   width: RFPercentage(3),
   height: RFPercentage(3),
 
 })`
-  color: ${({ theme }) => theme.colors.warning};
+
   margin-left: 25px; 
   margin-top: 15px;
 
