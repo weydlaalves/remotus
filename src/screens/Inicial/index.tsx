@@ -66,7 +66,7 @@ import {
               <CardFooter>
                 <TextFooter>Continuar como convidado</TextFooter>
               </CardFooter>
-            </Card>       
+            </Wrapper>       
         </Content>          
       </Container>
     )};
