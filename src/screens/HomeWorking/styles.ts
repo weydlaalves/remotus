@@ -52,18 +52,18 @@ export const Text = styled.Text`
 export const Text2 = styled.Text`
    font-size: ${RFValue(16)}px;
    font-family: ${({ theme }) => theme.fonts.bold};
-   color: ${({ theme }) => theme.colors.shape};
+   color: ${({ theme }) => theme.colors.warning};
    line-height: 19px;
    text-align: center;
    letter-spacing: 0.15px; 
     
 `;
 
-export const TextCard = styled.Text`
+export const Text1 = styled.Text`
    font-size: ${RFValue(14)}px;
-   font-family: ${({ theme }) => theme.fonts.regular};
-   color: ${({ theme }) => theme.colors.shape};
+   font-family: ${({ theme }) => theme.fonts.bold};
+   color: ${({ theme }) => theme.colors.warning};
    justify-content:center;
-   margin-top:12px; 
+   
 `;
 

@@ -11,7 +11,7 @@ import {
     Content,
     Text,
     Card,
-    TextCard,
+    Text1,
     WrapperText,
     WrapperText2,
     Text2,
@@ -26,12 +26,13 @@ import {
       <Container>
             <Content> 
                 <WrapperText>
-                    <Text>Bom trabalho, remoter!</Text>
+                    <Text>Bom trabalho, remoter :)</Text>
                 </WrapperText>
                 <Card>
-                    <TextCard>
+                    <Text1>
+                        Café Patriota
 
-                    </TextCard>
+                    </Text1>
 
                 </Card>
                 <WrapperText2>
