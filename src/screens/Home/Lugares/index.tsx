@@ -8,13 +8,14 @@ import {
   SafeAreaView,
   Image,
   FlatList,
+  TouchableOpacity,
 
 } from 'react-native';
 
 
 const ListItem = ({ item }) => {
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item}>
       <Image
         source={{
           uri: item.uri,
@@ -22,10 +23,8 @@ const ListItem = ({ item }) => {
         style={styles.itemPhoto}
         resizeMode="cover"
       />
-     
       <Text style={styles.itemText}>{item.text}</Text>
-
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -37,7 +36,6 @@ export function Lugares() {
       }}>
         <SectionList
           contentContainerStyle={{ paddingHorizontal: 10 }}
-          stickySectionHeadersEnabled={false}
           sections={SECTIONS}
           renderSectionHeader={({ section }) => (
             <>
@@ -46,8 +44,7 @@ export function Lugares() {
                 <FlatList
                   horizontal
                   data={section.data}
-                  renderItem={({ item }) => <ListItem item={item} />}
-                  showsHorizontalScrollIndicator ={false}
+                  renderItem={({ item }) => <ListItem item={item} />}  
                 />
               ) : null}
             </>

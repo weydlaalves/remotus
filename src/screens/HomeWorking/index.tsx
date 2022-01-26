@@ -1,26 +1,25 @@
 import React from 'react';
-import ImgInicial from '../../assets/ImgInicial/ImgInicial';
-import Logo from '../../assets/Icon/Logo/Logo';
-import Google from '../../assets/Icon/Google/google';
-import Facebook from '../../assets/Icon/Facebook/facebook';
-import Phone from '../../assets/Icon/Phone/phone';
-import Mail from '../../assets/Icon/Mail/mail';
+import {Footer} from '../Home/Footer/'
 
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import {
     Container,
     Content,
     Text,
-    Card,
-    Text1,
-    WrapperText,
-    WrapperText2,
-    Text2,
+    WrapperText,    
     WrapperFooter,
-
-  
+    Subtitle,
+    Card,  
+    CardText,
+    CardView,
+    CardRow,
+    CardSubtitle,    
+    Icon
   } from './styles';
+import { LikeTo } from './LikeTo';
  
-  export function HomeWorking() {
+
+export function HomeWorking() {
   
     return (
       <Container>
@@ -29,22 +28,38 @@ import {
                     <Text>Bom trabalho, remoter :)</Text>
                 </WrapperText>
                 <Card>
-                    <Text1>
-                        Café Patriota
-
-                    </Text1>
-
+                    <Icon>share</Icon>
+                    <CardText>Café Patriota</CardText>
+                    <Subtitle>Cafeteria</Subtitle> 
+                    <CardRow>
+                        <TouchableOpacity>
+                            <CardView>
+                                <Icon name='local-restaurant'/>
+                                <CardSubtitle>Cardápio</CardSubtitle>
+                            </CardView>
+                        </TouchableOpacity>
+                        
+                        <TouchableOpacity>
+                            <CardView>
+                                <Icon name='chat-bubble-outline'/>
+                                <CardSubtitle>Chat</CardSubtitle>
+                            </CardView>
+                            
+                        </TouchableOpacity>
+                        
+                        <TouchableOpacity>
+                            <CardView>
+                                <Icon name='radio-button-on'/>
+                                <CardSubtitle>Pomodoro</CardSubtitle>
+                            </CardView>
+                        </TouchableOpacity>                        
+                    </CardRow>                    
                 </Card>
-                <WrapperText2>
-                    <Text2>Você também pode gostar:</Text2>
-                </WrapperText2>
-                <WrapperFooter></WrapperFooter>
             </Content>
-            
-        
-        </Container>    
-              
-             
-       
-    )};
+            <WrapperFooter>
+                <LikeTo></LikeTo>
+                <Footer></Footer>
+            </WrapperFooter>
+        </Container>           
+)};
   

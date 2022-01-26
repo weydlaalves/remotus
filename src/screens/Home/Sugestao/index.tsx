@@ -8,13 +8,14 @@ import {
   SafeAreaView,
   Image,
   FlatList,
+  TouchableOpacity
 
 } from 'react-native';
 
 
 const ListItem = ({ item }) => {
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item}>
       <Image
         source={{
           uri: item.uri,
@@ -25,7 +26,7 @@ const ListItem = ({ item }) => {
      
       <Text style={styles.itemText}>{item.text}</Text>
 
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -36,7 +37,6 @@ export function Sugestao() {
       <SafeAreaView style={{ flex: 1 }}>
         <SectionList
           contentContainerStyle={{ paddingHorizontal: 10 }}
-          stickySectionHeadersEnabled={false}
           sections={SECTIONS}
           renderSectionHeader={({ section }) => (
             <>
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     
   },
   item: {
-    margin: 10,
+    margin: 7,
   },
   itemPhoto: {
     width: 100,

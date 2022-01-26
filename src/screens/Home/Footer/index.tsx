@@ -1,51 +1,50 @@
 import React from 'react';
-import { Container, Wrapper,Icon, IconPerfil, IconRemotus} from './style';
-import { Button } from '../../../components/Button';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { 
+  Container, 
+  Wrapper,
+  WrapperRow,
+  Text,
+  Icon, 
+  IconPerfil, 
+  IconRemotus,
+
+} from './style';
+
 import { Linking } from 'react-native';
 import Perfil from '../../../assets/Icon/Perfil/perfil'
 import Remotus from '../../../assets/Icon/Remotus/remotus';
 
-export function Footer(){
-  
+export function Footer() {
     return (
       <Container>
         <Wrapper>
-          <Icon>home</Icon>
-          <Button
-              onPress={() => Linking.openURL('https://remotusapp.com.br/')}
-              title="Home"
-              color="warning"
-          /> 
-        </Wrapper>
-         <Wrapper> 
-          <Icon>search</Icon>
-          <Button
-              onPress={() => Linking.openURL('https://remotusapp.com.br/')}
-              title="Pesquisar"
-              color="warning"
-            />
-        </Wrapper>      
-        <Wrapper> 
-            <IconRemotus xml={Remotus}/>
-            <Button
-              title="Visitados"
-              color="warning"
-            />
-        </Wrapper> 
+          <WrapperRow>
+            <TouchableOpacity>
+              <Icon>home</Icon>
+              <Text>Home</Text>
+            </TouchableOpacity>
+          
+            <TouchableOpacity>
+              <Icon>search</Icon>
+              <Text>Pesquisar</Text>
+            </TouchableOpacity>
+           
+            <TouchableOpacity>
+              <IconRemotus xml={Remotus}/>
+              <Text>Visitados</Text>
+            </TouchableOpacity>
                  
-        <Wrapper> 
-          <Icon>favorite</Icon>
-            <Button
-              title="Favoritar"
-              color="warning"
-            />
-        </Wrapper>        
-        <Wrapper>
-          <IconPerfil xml={Perfil} />
-            <Button
-                title="Perfil"
-                color="warning"
-              />
+            <TouchableOpacity>
+              <Icon>favorite</Icon>
+              <Text>Favoritar</Text>
+            </TouchableOpacity>
+           
+            <TouchableOpacity>
+              <IconPerfil xml={Perfil} />
+              <Text>Perfil</Text>
+            </TouchableOpacity>
+          </WrapperRow>    
         </Wrapper>
       </Container>
       )

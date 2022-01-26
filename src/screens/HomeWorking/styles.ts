@@ -9,61 +9,79 @@ export const Container = styled.SafeAreaView`
    
 `;
 export const Content = styled.View`
-   align-items:center;
+   align-items:center;   
    justify-content:center;
 `;
-
-
-export const WrapperFooter = styled.View`
-   flex-direction: row;
-   justify-content:center;
-   margin: 10px;
-   
+export const Text = styled.Text`
+   font-size: ${RFValue(18)}px;
+   font-family: ${({ theme }) => theme.fonts.bold};
+   color: ${({ theme }) => theme.colors.warning};
+   line-height: 19px;
+   text-align: center;
+   letter-spacing: 0.15px;
+   margin: 10px; 
+`;
+export const Subtitle = styled.Text`
+   font-size: ${RFValue(15)}px;
+   font-family: ${({ theme }) => theme.fonts.regular};
+   color: ${({ theme }) => theme.colors.grey};
+   text-align: left;
+   margin-left: 5%;
+   margin-top: -6%;   
 `;
 
 export const WrapperText = styled.View`
-   width: 80%;
-   height: 67px;
    
+   margin-right: 31%;
+   margin-top: -15%;
+      
 `;
-export const WrapperText2 = styled.View`
-   width: 80%;
-   height: 67px;
-   
-`;
+
+export const WrapperFooter = styled.View`
+
+`
 export const Card = styled.View`
-   align-items:center;
-   justify-content:center;
-   margin-Top: 10%;
-
+   width: 90%;
+   height: 60%;
+   background: pink;
+   margin: 10px;
+   border-radius:10px;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)   
 `;
-
-
-
-export const Text = styled.Text`
-   font-size: ${RFValue(16)}px;
+export const CardText = styled.Text`
+   font-size: ${RFValue(17)}px;
    font-family: ${({ theme }) => theme.fonts.bold};
    color: ${({ theme }) => theme.colors.warning};
    line-height: 19px;
-   text-align: center;
+   text-align: left;
    letter-spacing: 0.15px; 
-    
+   padding:5%;   
 `;
-export const Text2 = styled.Text`
-   font-size: ${RFValue(16)}px;
-   font-family: ${({ theme }) => theme.fonts.bold};
-   color: ${({ theme }) => theme.colors.warning};
-   line-height: 19px;
-   text-align: center;
-   letter-spacing: 0.15px; 
-    
+export const CardSubtitle = styled.Text`
+   font-size: ${RFValue(15)}px;
+   font-family: ${({ theme }) => theme.fonts.regular};
+   color: ${({ theme }) => theme.colors.grey};
+   text-align: left;
+   padding:3%;
+   margin-top: 40%;   
+`;
+export const CardView = styled.View`
+   width: 88px;
+   height: 88px;
+   background: ${({ theme }) => theme.colors.sucess_light};
+   margin: 19px;
+   border-radius:100px;
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2)
+   align-items: center;
+`;
+export const CardRow = styled.View`
+   flex-direction:row;
 `;
 
-export const Text1 = styled.Text`
-   font-size: ${RFValue(14)}px;
-   font-family: ${({ theme }) => theme.fonts.bold};
-   color: ${({ theme }) => theme.colors.warning};
-   justify-content:center;
-   
+export const Icon = styled(MaterialIcons)`
+  color: ${({ theme }) => theme.colors.success};
+  font-size: ${RFValue(30)}px;
+  margin-top: 27px;
 `;
 
