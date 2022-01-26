@@ -22,9 +22,7 @@ export function AppRoutes() {
       <Screen name="home_working" component={HomeWorking} /> 
       <Screen name="home" component={Home} />  
       <Screen name="inicial" component={Inicial} />
-      <Screen name="home_working" component={HomeWorking} /> 
-      <Screen name="home" component={Home} />
-      
+     
       
       </Navigator>
     </NavigationContainer>
