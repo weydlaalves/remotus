@@ -44,7 +44,6 @@ export function HomeWorking() {
                                 <Icon name='chat-bubble-outline'/>
                                 <CardSubtitle>Chat</CardSubtitle>
                             </CardView>
-                            
                         </TouchableOpacity>
                         
                         <TouchableOpacity>
