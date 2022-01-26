@@ -1,6 +1,5 @@
 import React from 'react';
-import {Footer} from '../Home/Footer/'
-
+import {Footer} from '../Home/Footer/';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {
     Container,
@@ -13,9 +12,10 @@ import {
     CardText,
     CardView,
     CardRow,
-    CardSubtitle,    
-    Icon
-  } from './styles';
+    CardSubtitle, 
+    Icon,   
+    IconShare,
+} from './styles';
 import { LikeTo } from './LikeTo';
  
 
@@ -28,7 +28,7 @@ export function HomeWorking() {
                     <Text>Bom trabalho, remoter :)</Text>
                 </WrapperText>
                 <Card>
-                    <Icon>share</Icon>
+                    <IconShare>share</IconShare>
                     <CardText>Café Patriota</CardText>
                     <Subtitle>Cafeteria</Subtitle> 
                     <CardRow>

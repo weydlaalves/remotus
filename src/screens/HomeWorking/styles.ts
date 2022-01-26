@@ -1,11 +1,9 @@
 import styled from 'styled-components/native';
-import { SvgXml } from 'react-native-svg';  
-import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { MaterialIcons } from '@expo/vector-icons'; 
 
 export const Container = styled.SafeAreaView`
-   flex:1;
-   
+   flex:1;  
    
 `;
 export const Content = styled.View`
@@ -22,12 +20,13 @@ export const Text = styled.Text`
    margin: 10px; 
 `;
 export const Subtitle = styled.Text`
+
    font-size: ${RFValue(15)}px;
    font-family: ${({ theme }) => theme.fonts.regular};
    color: ${({ theme }) => theme.colors.grey};
    text-align: left;
    margin-left: 5%;
-   margin-top: -6%;   
+   margin-top: -3%;   
 `;
 
 export const WrapperText = styled.View`
@@ -53,10 +52,9 @@ export const CardText = styled.Text`
    font-size: ${RFValue(17)}px;
    font-family: ${({ theme }) => theme.fonts.bold};
    color: ${({ theme }) => theme.colors.warning};
-   line-height: 19px;
-   text-align: left;
-   letter-spacing: 0.15px; 
-   padding:5%;   
+   padding:5%; 
+   margin-top: -10%;
+ 
 `;
 export const CardSubtitle = styled.Text`
    font-size: ${RFValue(15)}px;
@@ -82,6 +80,11 @@ export const CardRow = styled.View`
 export const Icon = styled(MaterialIcons)`
   color: ${({ theme }) => theme.colors.success};
   font-size: ${RFValue(30)}px;
-  margin-top: 27px;
+  margin-top: 30px;
 `;
+export const IconShare = styled(MaterialIcons)`
+  color: ${({ theme }) => theme.colors.success};
+  font-size: ${RFValue(30)}px;
+  margin: 5% 0 0 85%;
 
+`;
