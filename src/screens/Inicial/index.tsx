@@ -41,8 +41,6 @@ import {
               <WrapperText>
                 <Text>Falta pouco para você encontrar um lugar para trabalhar!</Text>
               </WrapperText>
-            </Wrapper>
-            <Card>
               
               <CardButtons>
                 <IconGoogle xml={Google}/>
@@ -73,3 +71,4 @@ import {
       </Container>
     )};
   
+    
