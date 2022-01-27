@@ -1,5 +1,6 @@
 import React from 'react';
 import {Footer} from '../Home/Footer/';
+import ImgUserPerfil from '../../assets/ImgUserPerfil/ImgUserPerfil';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
@@ -8,55 +9,58 @@ import {
     Content,
     Usuario,
     Text,
-    Cards,   
-    CardInfo,  
-    TitleInfo,
-    SubtitleInfo,
-    CardLog,
-    TitleLog,
-    SubtitleLog, 
-    CardNot,
-    TitleNot,
-    SubtitleNot,
-    CardSobre,
-    CardAjuda,
-    CardSair,
     TextSobre,
     TextAjuda,
-    TextSair,   
+    TextSair,
+    TitleInfo,
+    TitleLog,   
+    TitleNot,
+    SubtitleInfo,
+    SubtitleLog, 
+    SubtitleNot,
+    Cards,
+    WrapperFooter,
+    CardNot,   
+    CardInfo,
+    CardSobre,
+    CardAjuda, 
+    CardLog,
     Icon,
-    IconExit
-} from './styles';
+    IconExit,
+    IconUser,
+    IconInfo,
+    IconLogin,
+    IconNotifi,
 
+} from './styles';
 
 export function Perfil(){
 
     return(
-        
         <Container>
-            
             <Content>
                 <Usuario>
-                    <IconExit name='exit-to-app' color="black"/>
-                    <Text>
-                        Samuel Vieira
-                    </Text>
+                    <IconUser xml={ImgUserPerfil}/>
+                    <Text>Samuel Vieira</Text>
+                    <TouchableOpacity>
+                        <IconExit name='exit-to-app' color="black"/>
+                    </TouchableOpacity>
                 </Usuario>
                 <Cards>
-                    
                     <CardInfo>
-
-                        
+                        <IconInfo name='user-alt'/>
                         <Icon name='keyboard-arrow-right'/>
                         <TitleInfo>Informações Pessoais</TitleInfo>
                         <SubtitleInfo>foto do perfil,nome,data de nasc...</SubtitleInfo>
                     </CardInfo>
                     <CardLog>
+                        <IconLogin name='security'/>
                         <Icon name='keyboard-arrow-right'/>
                         <TitleLog>Login e segurança</TitleLog>
                         <SubtitleLog>email,alterar senha,</SubtitleLog>
                     </CardLog>
                     <CardNot>
+                        <IconNotifi name='notifications'/>
                         <Icon name='keyboard-arrow-right'/> 
                         <TitleNot>Notificações</TitleNot>
                         <SubtitleNot>email,alterar senha,</SubtitleNot>
@@ -69,11 +73,15 @@ export function Perfil(){
                         <Icon name='keyboard-arrow-right'/>
                         <TextAjuda>Ajuda</TextAjuda>
                     </CardAjuda>
-                    <CardSair>
+                    <TouchableOpacity>
                         <TextSair>Sair</TextSair>
-                    </CardSair>
+                    </TouchableOpacity>
+                    <WrapperFooter>
+                        <Footer></Footer>
+                    </WrapperFooter>
+                   
                 </Cards>
-                <Footer></Footer>
+                
                
             </Content>
             
